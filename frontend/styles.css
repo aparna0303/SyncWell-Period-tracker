@@ -1,0 +1,169 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Forum', serif;
+  font-weight: normal;
+  font-size: 2.5rem;
+  background: radial-gradient(circle at center, #fcb2d9, #fffaf3);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Main container */
+.auth-container {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 28px;
+  display: flex;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Left side – logo + tagline */
+.left-panel {
+  flex: 1;
+  background: linear-gradient(to bottom right, #ffe9f3, #fcb2d9);
+
+  padding: 60px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.left-panel img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+.left-panel h1 {
+  font-size: 2.4rem;
+  color: #b45077;
+  margin-bottom: 12px;
+}
+
+.left-panel p {
+  font-size: 1rem;
+  color: #9e476a;
+}
+
+/* Right side – form */
+.right-panel {
+  flex: 1;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ffffff;
+}
+
+.right-panel h2 {
+  font-size: 2rem;
+  color: #b45077;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='date'],
+input[type='number'] {
+  padding: 14px 16px;
+  border-radius: 14px;
+   background: #fff7fb;
+  border: 1.5px solid #fcb2d9;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+input:focus {
+  outline: none;
+  background-color: #ffe6f0;
+  border-color: #f57d9c;
+}
+
+/* Labels for signup only */
+label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #9e476a;
+  margin-top: 8px;
+  margin-bottom: -6px;
+}
+
+/* Button */
+button[type='submit'] {
+  padding: 14px 0;
+   background: #f57d9c;
+   box-shadow: 0 6px 18px rgba(245, 125, 156, 0.3);
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 22px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+button:focus {
+  background: #e45e7f;
+  outline: none;
+}
+
+/* Link */
+p {
+  font-size: 0.9rem;
+  color: #9e476a;
+  text-align: center;
+  margin-top: 20px;
+}
+
+p a {
+  color: #b45077;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .auth-container {
+    flex-direction: column;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .left-panel,
+  .right-panel {
+    width: 100%;
+    padding: 40px 24px;
+  }
+
+  .left-panel {
+    background: linear-gradient(to bottom right, #ffe9f3, #fcb2d9);
+  }
+}
