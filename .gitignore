@@ -1,0 +1,26 @@
+ # Node.js
+node_modules/
+.env
+.DS_Store
+npm-debug.log
+yarn-error.log
+
+# Logs
+logs
+*.log
+log.txt
+
+# Optional
+dist/
+build/
+coverage/
+
+# OS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDEs
+.vscode/
+.idea/
+*.swp
